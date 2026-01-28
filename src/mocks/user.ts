@@ -17,7 +17,7 @@ export const USER_WITHOUT_SUBSCRIPTION: User = {
   ...BASE_USER, subscriptions: []
 };
 
-export const USER_WITH_MULTIPLE_SUBSCRIPTION = {
+export const USER_WITH_MULTIPLE_SUBSCRIPTION: User = {
   ...BASE_USER,
   subscriptions: ["RIGHT_1", "RIGHT_2"],
 };
