@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+// dummy page, just to access the newsletters page, like we would, from a link in an email, for exemple.
 const HomePage = () => {
   return (
     <div>
