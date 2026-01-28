@@ -1,5 +1,7 @@
 import { Newsletter, SubscriptionRight } from "@/types";
-import { NewsletterCard } from "./NewsletterCard";
+import { NewsletterCard } from "../NewsletterCard";
+
+import styles from './index.module.css'
 
 interface NewsletterListProps {
   newsletters: Newsletter[];
@@ -24,8 +26,8 @@ export const NewsletterList = ({ newsletters, userSubscriptions }: NewsletterLis
     <>
       {groups.map(([site, siteNewsletters]) => (
         <section key={site}>
-          <h3>{site}</h3>
-          <ul>
+          <h3 className={styles.title}>{site}</h3>
+          <ul className={styles.boxContainer}>
             {siteNewsletters.map((newsletter) => (
               <NewsletterCard
                 key={newsletter.id}

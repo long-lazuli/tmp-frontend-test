@@ -1,0 +1,17 @@
+.header {
+    background: #F4F4F4;
+    padding: 1rem 2rem;
+
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    line-height: 33px;
+    text-transform: uppercase;
+}
+
+.title,
+.description {
+    margin: 0.5rem;
+}

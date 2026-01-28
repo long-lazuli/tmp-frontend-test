@@ -1,0 +1,22 @@
+.title {
+    text-transform: uppercase;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    background-color: #B00005;
+    border-radius: 2px;
+    height: 4px;
+    width: 70px;
+
+    margin-top: 1rem;
+}
+
+.boxContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}

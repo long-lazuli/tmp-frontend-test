@@ -1,5 +1,13 @@
+:root {
+  font-size: 16px;
+}
+
+
 body {
   margin: 0;
+
+  font-size: 1rem;
+  line-height: 26px;
 }
 
 .header-bg {
