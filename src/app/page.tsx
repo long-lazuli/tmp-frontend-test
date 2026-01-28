@@ -3,7 +3,7 @@ import Link from "next/link";
 const HomePage = () => {
   return (
     <div>
-      <h1>Les Echos Newsletters</h1>
+      <h1>Les Echos - Newsletters demo</h1>
       <p>See newsletter page as:</p>
       <ul>
         <li><Link href="/newsletter/abc123">User without subscription</Link></li>
