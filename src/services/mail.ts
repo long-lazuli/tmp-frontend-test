@@ -2,7 +2,7 @@ import { USER_WITH_MULTIPLE_SUBSCRIPTION, USER_WITH_ONE_SUBSCRIPTION, USER_WITHO
 import { User } from "@/types";
 
 /**
- * Retrieves the profile type from a mail secret.
+ * Retrieves the user from a mail secret.
  *
  * In a real-life scenario, this would decode the mail secret
  * to retrieve the actual user ID from a database or JWT token.
