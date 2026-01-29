@@ -1,5 +1,16 @@
+:root {
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+
+  font-size: 1rem;
+  line-height: 26px;
 }
 
 .header-bg {

@@ -1,0 +1,20 @@
+.header {
+    background: #F4F4F4;
+    color: #212121;
+    
+    padding: 1rem 2rem;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    line-height: 33px;
+    text-transform: uppercase;
+}
+
+.title,
+.description {
+    margin: 0.5rem;
+}

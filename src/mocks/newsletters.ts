@@ -1,4 +1,6 @@
-export const NEWSLETTER_ITEMS = [
+import { Newsletter } from "@/types";
+
+export const NEWSLETTER_ITEMS: Newsletter[] = [
   {
     id: "000000000000000000000000",
     image: "https://via.placeholder.com/150",
