@@ -2,7 +2,9 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Source_Sans_3 } from "next/font/google";
+const source = Source_Sans_3({subsets: ['latin']})
+
 import styles from './layout.module.css'
 
 export default function RootLayout({
@@ -12,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={[inter.className, styles.layout].join(' ')}>{children}</body>
+      <body className={[source.className, styles.layout].join(' ')}>{children}</body>
     </html>
   );
 }

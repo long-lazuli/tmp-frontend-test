@@ -25,7 +25,7 @@ export const NewsletterList = ({ newsletters, userSubscriptions }: NewsletterLis
   return (
     <>
       {groups.map(([site, siteNewsletters]) => (
-        <section key={site}>
+        <section className={styles.section} key={site}>
           <h3 className={styles.title}>{site}</h3>
           <ul className={styles.boxContainer}>
             {siteNewsletters.map((newsletter) => (

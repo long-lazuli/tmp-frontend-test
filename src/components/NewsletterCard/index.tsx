@@ -1,6 +1,10 @@
 import { Newsletter, SubscriptionRight } from "@/types";
+import { NewsletterCTA } from "@/components/NewsletterCTA";
 
 import styles from "./index.module.css"
+import { Merriweather } from "next/font/google";
+
+const merry = Merriweather({ weight: '700', subsets: ['latin']});
 
 interface NewsletterCardProps {
   newsletter: Newsletter;
@@ -14,9 +18,9 @@ export const NewsletterCard = ({ newsletter, userSubscriptions }: NewsletterCard
 
   return (
     <li className={styles.box}>
-      <h4 className={styles.title}>{newsletter.title}</h4>
+      <h4 className={[styles.title, merry.className].join(' ')}>{newsletter.title}</h4>
       <p>{newsletter.description}</p>
-      <button>{userHasAccess ? "S'inscrire" : "S'abonner"}</button>
+      <NewsletterCTA userHasAccess={userHasAccess} />
     </li>
   );
 };
